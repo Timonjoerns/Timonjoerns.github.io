@@ -11,10 +11,13 @@
     <div class="grid">
         <div class="square">
           <h1 class="aboutMeText">ÜBER MICH</h1>
-          <img src="aboutMe.jpeg" alt="">
         </div>
-        <div class="square"></div>
-        <div class="square"></div>
+        <div class="square">
+          <h1 class="portfolio">PORTFOLIO</h1>
+        </div>
+        <div class="square">
+          <a href="mailto:timon@joerns.info" class="mail">MAIL</a>
+        </div>
 
 
         </div>
@@ -49,11 +52,13 @@ body{
 .title{
     color: white;
 }
-.aboutMeText{
+.aboutMeText, .portfolio, .mail{
   width: 100%;
   text-align: center;
   margin-top: 50%;
   font-size: 2em;
-  
+  color: #111;
+  text-decoration: none;  
+  letter-spacing: .2em;
 }
 </style>
