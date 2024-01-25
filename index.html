@@ -6,7 +6,7 @@
     <title>Studio Jörns</title>
 </head>
 <body>
-  <h1 class="title">Timon Jörns :-D</h1>
+  <h1 class="title">Timon Jörns</h1>
     <!--GRID-->
     <div class="grid">
         <div class="square">
@@ -16,7 +16,9 @@
           <h1 class="portfolio">PORTFOLIO</h1>
         </div>
         <div class="square">
-          <a href="mailto:timon@joerns.info" class="mail">MAIL</a>
+          <h1 class="mail">
+            <a class="mail2" href="mailto:timon@joerns.info">MAIL</a>
+          </h1>
         </div>
 
 
@@ -42,7 +44,9 @@
   background-color: white;
   padding: 1em;
   color: #111;
-  aspect-ratio: 1/1;
+}
+.square:hover{
+  background-color:tomato;
 }
 
 body{
@@ -55,10 +59,15 @@ body{
 .aboutMeText, .portfolio, .mail{
   width: 100%;
   text-align: center;
-  margin-top: 50%;
   font-size: 2em;
   color: #111;
   text-decoration: none;  
   letter-spacing: .2em;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: normal;
+}
+.mail2{
+  color: black;
+  text-decoration: none;
 }
 </style>
