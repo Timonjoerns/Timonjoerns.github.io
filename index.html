@@ -6,10 +6,17 @@
     <title>Studio Jörns</title>
 </head>
 <body>
+  <h1 class="title">Timon Jörns</h1>
     <!--GRID-->
     <div class="grid">
-        <h1 class="title">Timon Jörns</h1>
         <div class="square">
+          <h1 class="aboutMeText">ÜBER MICH</h1>
+          <img src="aboutMe.jpeg" alt="">
+        </div>
+        <div class="square"></div>
+        <div class="square"></div>
+
+
         </div>
 </body>
 </html>
@@ -23,17 +30,16 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2%;
+  grid-template-columns: repeat(auto-fit, minmax(500px,1fr));
+  gap: 1rem;
 }
 
 .square {
-  aspect-ratio: 1/ 1;
   display: flex;
-  align-items:center;
   background-color: white;
-  padding: 5%;
+  padding: 1em;
   color: #111;
+  aspect-ratio: 1/1;
 }
 
 body{
@@ -41,8 +47,13 @@ body{
     font-family: 'IBM Plex Sans', sans-serif;
 }
 .title{
-    grid-column: 1 / 4;
     color: white;
-
+}
+.aboutMeText{
+  width: 100%;
+  text-align: center;
+  margin-top: 50%;
+  font-size: 2em;
+  
 }
 </style>
